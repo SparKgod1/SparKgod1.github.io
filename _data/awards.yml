@@ -1,0 +1,17 @@
+- year: 2026
+  result: Champion
+  title: WorldArena
+  description: Ranked 1st in the WorldArena embodied world model benchmark.
+  link: https://world-arena.ai/
+
+- year: 2026
+  result: Runner-up
+  title: AgiBot World Challenge 2026
+  description: Ranked 2nd in the AgiBot World Challenge 2026.
+  link: https://agibot-world.com/challenge2026
+
+- year: 2024
+  result: First Prize
+  title: Baidu PaddlePaddle Cup (百度飞桨杯)
+  description: First Prize in the 2024 Baidu PaddlePaddle Cup.
+  link:

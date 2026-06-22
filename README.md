@@ -8,6 +8,7 @@ This is a minimal academic homepage for GitHub Pages. Edit content in `_data/*.y
 - `_data/publications.yml`: papers and preprints
 - `_data/news.yml`: recent updates
 - `_data/projects.yml`: software, datasets, demos, and project pages
+- `_data/awards.yml`: honors, competitions, and awards
 - `files/cv.pdf`: CV
 - `files/papers/`: local paper PDFs
 - `assets/img/profile/avatar.jpg`: profile photo

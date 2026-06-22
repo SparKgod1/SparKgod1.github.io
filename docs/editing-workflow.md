@@ -75,3 +75,14 @@ Copy this block in `_data/projects.yml`:
 - Put text after the colon.
 - If a value contains a colon, wrap the whole value in quotes.
 - Leave unused links blank.
+## Add An Award
+
+Copy this block in `_data/awards.yml`:
+
+```yaml
+- year: 2026
+  result: Champion
+  title: Competition or Award Name
+  description: One sentence description.
+  link:
+```

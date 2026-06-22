@@ -209,6 +209,7 @@ h2 {
   font-weight: 650;
 }
 
+.award-list,
 .news-list {
   display: grid;
   gap: 0.45rem;
@@ -217,15 +218,22 @@ h2 {
   list-style: none;
 }
 
+.award-list li,
 .news-list li {
   display: grid;
   grid-template-columns: 6.5rem minmax(0, 1fr);
   gap: 0.8rem;
 }
 
+.award-list time,
 .news-list time {
   color: var(--muted);
   font-variant-numeric: tabular-nums;
+}
+
+.award-list p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
 }
 
 .year-group {
@@ -341,6 +349,7 @@ h2 {
     margin-bottom: 0.5rem;
   }
 
+  .award-list time,
   .news-list time {
     display: block;
     margin-bottom: 0.1rem;

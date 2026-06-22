@@ -7,6 +7,7 @@ layout: default
 {% assign selected_publications = publications | where: "selected", true %}
 {% assign projects = site.data.projects | sort: "year" | reverse %}
 {% assign news = site.data.news | sort: "date" | reverse %}
+{% assign awards = site.data.awards | sort: "year" | reverse %}
 
 <section class="hero" aria-labelledby="intro-title">
   <div class="hero-main">
@@ -58,6 +59,30 @@ layout: default
 </section>
 {% endif %}
 
+
+{% if awards.size > 0 %}
+<section class="section" aria-labelledby="awards-title">
+  <div class="section-heading">
+    <h2 id="awards-title">Awards</h2>
+  </div>
+  <ol class="award-list">
+    {% for award in awards %}
+    <li>
+      <time>{{ award.year }}</time>
+      <div>
+        <strong>{{ award.result }}</strong>
+        {% if award.link %}
+        <a href="{{ award.link }}">{{ award.title }}</a>
+        {% else %}
+        <span>{{ award.title }}</span>
+        {% endif %}
+        {% if award.description %}<p>{{ award.description }}</p>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
 {% if selected_publications.size > 0 %}
 <section class="section" aria-labelledby="selected-title">
   <div class="section-heading">
