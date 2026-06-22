@@ -1,9 +1,1 @@
-- name: Project Name
-  description: One sentence description of the project, dataset, software, or demo.
-  year: 2026
-  # Optional project image, for example:
-  # image: assets/img/projects/project-name.jpg
-  image:
-  link:
-  code:
-  paper:
+[]

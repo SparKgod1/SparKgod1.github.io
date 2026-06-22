@@ -1,31 +1,16 @@
-- title: Selected Paper Title
-  authors: Your Name, Coauthor A, Coauthor B
-  venue: Conference or Journal
+- title: "PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation"
+  authors: Yuhang Huang, Xuan Lv, Junyan Xu, Zhiyuan Yu, Jiazhao Zhang, Ruizhen Hu, Wancheng Feng, Shilong Zou, Hewen Xiao, Ziqiao Zhou, Kaiyun Huang, Zhiyu Peng, Juzhan Xu, Hang Zhao, Chenyang Zhu, Renjiao Yi, Yifei Huang, Douhui Wu, Yan Zhang, Kexu Cheng, Chunhe Song, Yunzhi Xue, Xiuhong Zhang, Leitao Guo, Yunji Chen, Bin Wu, Haibin Yu, Kai Xu
+  venue: arXiv
   year: 2026
-  type: conference
+  type: preprint
   selected: true
-  summary: One sentence contribution summary.
-  paper:
+  summary: PAIWorld improves multi-view world foundation models for robotic manipulation with geometry-aware cross-view attention, geometric positional encoding, and 3D-aware feature distillation.
+  paper: https://arxiv.org/abs/2606.18375
   code:
   project:
   slides:
   video:
   bibtex:
   # Optional teaser image, for example:
-  # image: assets/img/publications/paper-short-id.jpg
-  image:
-
-- title: Another Paper Title
-  authors: Your Name, Coauthor C
-  venue: Workshop or Preprint
-  year: 2025
-  type: preprint
-  selected: false
-  summary: One sentence contribution summary.
-  paper:
-  code:
-  project:
-  slides:
-  video:
-  bibtex:
+  # image: assets/img/publications/paiworld.jpg
   image:

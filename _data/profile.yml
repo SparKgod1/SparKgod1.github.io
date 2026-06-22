@@ -1,19 +1,19 @@
-name: Your Name
-title: Ph.D. Student / Researcher
-affiliation: Your University or Lab
-bio: I work on research area A, research area B, and research area C.
+name: Xuan Lv
+title: Researcher
+affiliation:
+bio: I work on world foundation models, robot learning, and 3D-consistent multi-view modeling for robotic manipulation.
 # Put your portrait at assets/img/profile/avatar.jpg, then set:
 # avatar: assets/img/profile/avatar.jpg
 avatar:
 
 interests:
-  - Research interest one
-  - Research interest two
-  - Research interest three
+  - World foundation models for robotics
+  - Robot learning and manipulation
+  - Multi-view 3D consistency
 
 links:
-  email: mailto:you@example.com
+  email:
   google_scholar:
-  github:
+  github: https://github.com/SparKgod1
   orcid:
-  cv: files/cv.pdf
+  cv:
