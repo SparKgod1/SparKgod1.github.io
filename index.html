@@ -4,7 +4,6 @@ layout: default
 
 {% assign profile = site.data.profile %}
 {% assign publications = site.data.publications | sort: "year" | reverse %}
-{% assign selected_publications = publications | where: "selected", true %}
 {% assign projects = site.data.projects | sort: "year" | reverse %}
 {% assign news = site.data.news | sort: "date" | reverse %}
 {% assign awards = site.data.awards | sort: "year" | reverse %}
@@ -13,7 +12,7 @@ layout: default
   <div class="hero-main">
     <p class="eyebrow">{{ profile.title }}</p>
     <h1 id="intro-title">{{ profile.name }}</h1>
-    <p class="affiliation">{{ profile.affiliation }}</p>
+    {% if profile.affiliation %}<p class="affiliation">{{ profile.affiliation }}</p>{% endif %}
     <p class="bio">{{ profile.bio }}</p>
 
     <nav class="link-row" aria-label="Profile links">
@@ -59,7 +58,6 @@ layout: default
 </section>
 {% endif %}
 
-
 {% if awards.size > 0 %}
 <section class="section" aria-labelledby="awards-title">
   <div class="section-heading">
@@ -83,34 +81,24 @@ layout: default
   </ol>
 </section>
 {% endif %}
-{% if selected_publications.size > 0 %}
-<section class="section" aria-labelledby="selected-title">
-  <div class="section-heading">
-    <h2 id="selected-title">Selected Publications</h2>
-  </div>
-  <div class="publication-list">
-    {% for publication in selected_publications %}
-    {% include publication.html publication=publication %}
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
 
 <section class="section" aria-labelledby="publications-title">
   <div class="section-heading">
     <h2 id="publications-title">Publications</h2>
   </div>
   {% assign publications_by_year = publications | group_by: "year" %}
-  {% for group in publications_by_year %}
-  <section class="year-group" aria-labelledby="year-{{ group.name }}">
-    <h3 id="year-{{ group.name }}">{{ group.name }}</h3>
-    <div class="publication-list">
-      {% for publication in group.items %}
-      {% include publication.html publication=publication %}
-      {% endfor %}
-    </div>
-  </section>
-  {% endfor %}
+  <div class="publication-years">
+    {% for group in publications_by_year %}
+    <section class="year-group" aria-labelledby="year-{{ group.name }}">
+      <h3 id="year-{{ group.name }}">{{ group.name }}</h3>
+      <div class="publication-list">
+        {% for publication in group.items %}
+        {% include publication.html publication=publication %}
+        {% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+  </div>
 </section>
 
 {% if projects.size > 0 %}
