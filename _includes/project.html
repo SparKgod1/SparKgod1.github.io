@@ -1,0 +1,11 @@
+{% assign project = include.project %}
+<article class="project">
+  <h3>{{ project.name }}</h3>
+  {% if project.year %}<p class="project-year">{{ project.year }}</p>{% endif %}
+  <p>{{ project.description }}</p>
+  <p class="paper-links">
+    {% if project.link %}<a href="{{ project.link }}">Project</a>{% endif %}
+    {% if project.code %}<a href="{{ project.code }}">Code</a>{% endif %}
+    {% if project.paper %}<a href="{{ project.paper }}">Paper</a>{% endif %}
+  </p>
+</article>

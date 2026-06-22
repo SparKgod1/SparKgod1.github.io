@@ -1,0 +1,29 @@
+- title: Selected Paper Title
+  authors: Your Name, Coauthor A, Coauthor B
+  venue: Conference or Journal
+  year: 2026
+  type: conference
+  selected: true
+  summary: One sentence contribution summary.
+  paper:
+  code:
+  project:
+  slides:
+  video:
+  bibtex:
+  image:
+
+- title: Another Paper Title
+  authors: Your Name, Coauthor C
+  venue: Workshop or Preprint
+  year: 2025
+  type: preprint
+  selected: false
+  summary: One sentence contribution summary.
+  paper:
+  code:
+  project:
+  slides:
+  video:
+  bibtex:
+  image:

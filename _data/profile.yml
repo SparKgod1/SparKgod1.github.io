@@ -1,0 +1,17 @@
+﻿name: Your Name
+title: Ph.D. Student / Researcher
+affiliation: Your University or Lab
+bio: I work on research area A, research area B, and research area C.
+avatar:
+
+interests:
+  - Research interest one
+  - Research interest two
+  - Research interest three
+
+links:
+  email: mailto:you@example.com
+  google_scholar:
+  github:
+  orcid:
+  cv: files/cv.pdf

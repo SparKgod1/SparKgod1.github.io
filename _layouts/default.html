@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% assign profile = site.data.profile %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ profile.name }}{% if site.title %} | {{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ profile.bio | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <a class="site-name" href="{{ '/' | relative_url }}">{{ site.data.profile.name }}</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#research-title">Research</a>
+        <a href="#selected-title">Selected</a>
+        <a href="#publications-title">Publications</a>
+        <a href="#projects-title">Projects</a>
+      </nav>
+    </header>
+
+    <main id="content" class="page">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <span>Last updated {{ site.time | date: "%Y-%m-%d" }}</span>
+      {% if site.data.profile.links.github %}
+      <a href="{{ site.data.profile.links.github }}">Source</a>
+      {% endif %}
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+﻿{% assign publication = include.publication %}
+<article class="publication{% unless publication.image %} publication-no-image{% endunless %}">
+  {% if publication.image %}
+  <img class="publication-image" src="{{ publication.image | relative_url }}" alt="">
+  {% endif %}
+  <div class="publication-body">
+    <h4>{{ publication.title }}</h4>
+    <p class="authors">{{ publication.authors }}</p>
+    <p class="venue">
+      {% if publication.venue %}<span>{{ publication.venue }}</span>{% endif %}
+      {% if publication.year %}<span>{{ publication.year }}</span>{% endif %}
+      {% if publication.type %}<span>{{ publication.type }}</span>{% endif %}
+    </p>
+    {% if publication.summary %}
+    <p class="summary">{{ publication.summary }}</p>
+    {% endif %}
+    <p class="paper-links">
+      {% if publication.paper %}<a href="{{ publication.paper }}">Paper</a>{% endif %}
+      {% if publication.code %}<a href="{{ publication.code }}">Code</a>{% endif %}
+      {% if publication.project %}<a href="{{ publication.project }}">Project</a>{% endif %}
+      {% if publication.slides %}<a href="{{ publication.slides }}">Slides</a>{% endif %}
+      {% if publication.video %}<a href="{{ publication.video }}">Video</a>{% endif %}
+      {% if publication.bibtex %}<a href="{{ publication.bibtex }}">BibTeX</a>{% endif %}
+    </p>
+  </div>
+</article>
+

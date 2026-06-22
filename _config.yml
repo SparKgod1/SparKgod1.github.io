@@ -1,0 +1,10 @@
+title: Academic Homepage
+description: A minimal academic homepage.
+url: ""
+baseurl: ""
+timezone: Asia/Shanghai
+
+markdown: kramdown
+
+exclude:
+  - docs/
