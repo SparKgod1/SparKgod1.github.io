@@ -92,7 +92,7 @@ a:hover {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-columns: minmax(0, 1fr) 320px;
   gap: 2rem;
   align-items: center;
   padding: 3.4rem 0 3rem;
@@ -142,8 +142,8 @@ h1 {
 
 .hero-visual {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
   border-radius: 7px;
   border: 1px solid var(--line);
   background: var(--surface);
@@ -258,13 +258,20 @@ h2 {
 
 .award-list li {
   display: grid;
-  grid-template-columns: 96px 5.5rem minmax(0, 1fr);
-  gap: 0.85rem;
+  grid-template-columns: 168px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  gap: 0.25rem 0.95rem;
+  align-items: start;
   padding: 0.85rem 0.95rem;
 }
 
 .award-no-image {
-  grid-template-columns: 5.5rem minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.award-no-image time,
+.award-no-image > div {
+  grid-column: 1;
 }
 
 .news-list time,
@@ -273,10 +280,23 @@ h2 {
   font-variant-numeric: tabular-nums;
 }
 
+.award-list time {
+  grid-column: 2;
+  grid-row: 1;
+  line-height: 1.2;
+}
+
+.award-list li > div {
+  grid-column: 2;
+  grid-row: 2;
+}
+
 .award-image {
-  width: 96px;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
   border-radius: 5px;
   border: 1px solid var(--line);
   background: var(--soft);
@@ -312,7 +332,7 @@ h2 {
 }
 
 .publication {
-  grid-template-columns: 128px minmax(0, 1fr);
+  grid-template-columns: 180px minmax(0, 1fr);
 }
 
 .publication-no-image {
@@ -320,9 +340,9 @@ h2 {
 }
 
 .publication-image {
-  width: 128px;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  width: 180px;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
   border: 1px solid var(--line);
   border-radius: 5px;
   background: var(--soft);
