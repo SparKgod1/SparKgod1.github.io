@@ -1,7 +1,9 @@
-﻿name: Your Name
+name: Your Name
 title: Ph.D. Student / Researcher
 affiliation: Your University or Lab
 bio: I work on research area A, research area B, and research area C.
+# Put your portrait at assets/img/profile/avatar.jpg, then set:
+# avatar: assets/img/profile/avatar.jpg
 avatar:
 
 interests:

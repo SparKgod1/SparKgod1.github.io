@@ -11,6 +11,8 @@
   slides:
   video:
   bibtex:
+  # Optional teaser image, for example:
+  # image: assets/img/publications/paper-short-id.jpg
   image:
 
 - title: Another Paper Title

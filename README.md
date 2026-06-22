@@ -10,9 +10,18 @@ This is a minimal academic homepage for GitHub Pages. Edit content in `_data/*.y
 - `_data/projects.yml`: software, datasets, demos, and project pages
 - `files/cv.pdf`: CV
 - `files/papers/`: local paper PDFs
-- `assets/img/avatar.jpg`: profile photo
+- `assets/img/profile/avatar.jpg`: profile photo
+- `assets/img/publications/`: publication teaser images
+- `assets/img/projects/`: project images
 
 To add a publication, copy one item in `_data/publications.yml` and update the fields.
+
+To add an image, put the file under `assets/img/` and reference it from YAML:
+
+```yaml
+avatar: assets/img/profile/avatar.jpg
+image: assets/img/publications/paper-short-id.jpg
+```
 
 ## Deploy To GitHub Pages
 

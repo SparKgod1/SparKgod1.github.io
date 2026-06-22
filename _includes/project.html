@@ -1,5 +1,8 @@
 {% assign project = include.project %}
 <article class="project">
+  {% if project.image %}
+  <img class="project-image" src="{{ project.image | relative_url }}" alt="">
+  {% endif %}
   <h3>{{ project.name }}</h3>
   {% if project.year %}<p class="project-year">{{ project.year }}</p>{% endif %}
   <p>{{ project.description }}</p>

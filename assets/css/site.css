@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #fbfaf8;
   --text: #1f2328;
   --muted: #606975;
@@ -263,6 +263,16 @@ h2 {
 .publication-image {
   width: 128px;
   aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--soft);
+}
+
+.project-image {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border: 1px solid var(--line);
   border-radius: 4px;
