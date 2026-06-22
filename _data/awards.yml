@@ -3,15 +3,18 @@
   title: WorldArena
   description: Ranked 1st in the WorldArena embodied world model benchmark.
   link: https://world-arena.ai/
+  image: assets/img/awards/worldarena.png
 
 - year: 2026
   result: Runner-up
   title: AgiBot World Challenge 2026
   description: Ranked 2nd in the AgiBot World Challenge 2026.
   link: https://agibot-world.com/challenge2026
+  image: assets/img/awards/agibot.png
 
 - year: 2024
   result: First Prize
   title: Baidu PaddlePaddle Cup AI Innovation Competition
   description: First Prize, Agent Social Behavior Simulation Track.
   link:
+  image: assets/img/awards/paddlepaddle.png

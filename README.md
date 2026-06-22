@@ -14,6 +14,8 @@ This is a minimal academic homepage for GitHub Pages. Edit content in `_data/*.y
 - `assets/img/profile/avatar.jpg`: profile photo
 - `assets/img/publications/`: publication teaser images
 - `assets/img/projects/`: project images
+- `assets/img/awards/`: award images
+- `assets/img/home/hero-visual.png`: homepage visual
 
 To add a publication, copy one item in `_data/publications.yml` and update the fields.
 

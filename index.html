@@ -26,6 +26,8 @@ layout: default
 
   {% if profile.avatar %}
   <img class="avatar" src="{{ profile.avatar | relative_url }}" alt="{{ profile.name }}">
+  {% elsif profile.visual %}
+  <img class="hero-visual" src="{{ profile.visual | relative_url }}" alt="Academic visual for {{ profile.name }}">
   {% endif %}
 </section>
 
@@ -65,7 +67,8 @@ layout: default
   </div>
   <ol class="award-list">
     {% for award in awards %}
-    <li>
+    <li class="{% unless award.image %}award-no-image{% endunless %}">
+      {% if award.image %}<img class="award-image" src="{{ award.image | relative_url }}" alt="">{% endif %}
       <time>{{ award.year }}</time>
       <div>
         <strong>{{ award.result }}</strong>

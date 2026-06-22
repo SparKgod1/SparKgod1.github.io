@@ -5,6 +5,7 @@ bio: I work on world foundation models, robot learning, and 3D-consistent multi-
 # Put your portrait at assets/img/profile/avatar.jpg, then set:
 # avatar: assets/img/profile/avatar.jpg
 avatar:
+visual: assets/img/home/hero-visual.png
 
 interests:
   - World foundation models for robotics
