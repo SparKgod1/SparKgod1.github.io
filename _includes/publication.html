@@ -1,11 +1,14 @@
-﻿{% assign publication = include.publication %}
+{% assign publication = include.publication %}
 <article class="publication{% unless publication.image %} publication-no-image{% endunless %}">
   {% if publication.image %}
   <img class="publication-image" src="{{ publication.image | relative_url }}" alt="">
   {% endif %}
   <div class="publication-body">
     <h4>{{ publication.title }}</h4>
-    <p class="authors">{{ publication.authors }}</p>
+    {% assign author_name = site.data.profile.name %}
+    {% capture highlighted_name %}<strong>{{ author_name }}</strong>{% endcapture %}
+    {% assign highlighted_authors = publication.authors | replace: author_name, highlighted_name %}
+    <p class="authors">{{ highlighted_authors }}</p>
     <p class="venue">
       {% if publication.venue %}<span>{{ publication.venue }}</span>{% endif %}
       {% if publication.year %}<span>{{ publication.year }}</span>{% endif %}
@@ -24,4 +27,3 @@
     </p>
   </div>
 </article>
-
