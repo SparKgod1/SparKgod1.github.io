@@ -26,6 +26,20 @@ avatar: assets/img/profile/avatar.jpg
 image: assets/img/publications/paper-short-id.jpg
 ```
 
+
+## Generate Visual Assets
+
+This project includes a local no-model visual generator. It creates PNG placeholder visuals from `_data/*.yml` using PowerShell and `System.Drawing`.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\generate_visual_assets.ps1
+```
+
+Default behavior is conservative: existing image files are not overwritten. To regenerate all referenced images:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\generate_visual_assets.ps1 -Force
+```
 ## Deploy To GitHub Pages
 
 Use a repository named:
